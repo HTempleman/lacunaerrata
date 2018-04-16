@@ -25,7 +25,7 @@ SECRET_KEY = '3)&)^4o3mu$kb-*9qr4a9ppb^5csa@fhq013w=em*8srr1-@hc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.203.74.78', 'localhost','lacunaerrata.com']
+ALLOWED_HOSTS = ['159.203.74.78', 'localhost','lacunaerrata.com','127.0.0.1']
 
 
 # Application definition
