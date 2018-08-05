@@ -8,4 +8,10 @@ def index(request):
     template = loader.get_template('blog/index.html')
     return HttpResponse(template.render({}, request))
 
+def about(request):
+	template = loader.get_template('blog/about.html')
+	return HttpResponse(template.render({}, request))
+
+
+
 
