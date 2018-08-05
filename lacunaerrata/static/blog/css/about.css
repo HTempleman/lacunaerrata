@@ -1,0 +1,217 @@
+
+/**below is my page schema */
+/**
+ 1────3────────────11───13───17
+ │logo│ horz-title │nav │tab1│
+ 3────┼────────────┴────┴────┤
+ │v t │                      │
+ │e i │                      │
+ │r t │    about-content     │
+ │t l │                      │
+ │  e │                      │
+ │    │                      │
+ 11/1─┴─────────────────10──13
+ │                      │tab2│
+ │                      3────┤
+ │                      │    │
+ │                      │    │
+ │   picture-content    │pic │
+ │                      │nav │
+ │                      │    │
+ │                      │    │
+ │                      │    │
+ 10/1──────────────────13───17
+ │           tab3            │
+ 3───────────────────────────┤
+ │                           │
+ │                           │
+ │                           │
+ │       blog-content        │
+ │                           │
+ │                           │
+ │                           │
+ 11──────────────────────────┘
+*/
+/**above is my page schema */
+
+nav a {
+  display: flex;
+  transition: all 1s ease;
+  color: black;
+
+}
+nav a:hover {
+  color: #d1c860;
+  padding-left: 4px;
+  opacity: 0.75;
+}
+
+section#about-page .grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-column-gap: 0px;
+  grid-template-rows: repeat(10, 1fr);
+  grid-row-gap: 0px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Galada', cursive;
+}
+
+section#picture-page .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-template-rows: repeat(9, 1fr);
+  grid-row-gap: 0px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Galada', cursive;
+}
+
+section#blog-page .grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-column-gap: 0px;
+  grid-template-rows: repeat(10,1fr);
+  grid-row-gap: 0px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Galada', cursive;
+}
+
+h1 {
+  padding: 40px;
+  transition: all 1s ease;
+  font-size: 15vh;
+  color: black;
+}
+
+h1:hover {
+  padding: 50px;
+  color: #756192;
+
+}
+
+h3 {
+  display: flex;
+  transition: all 1s ease;
+  font-size: 6vw;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0.5em;
+  left: -0.75em;
+  align-items: center;
+}
+
+h3:hover{
+  top: 1em;
+  color: #756192;
+}
+
+.logo {
+  grid-area: 1/1/3/3;
+  background-color: #C7BA19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.horz-title {
+  grid-area: 1/3/3/11;
+  background-color: #C12963;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+
+
+.menu {
+  grid-area: 1/11/3/13;
+  background-color: #C12963;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vh;
+}
+
+.tab1 {
+  grid-area: 1/13/3/17;
+  background-color: #C12963;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding: 20px;
+	font-size: 10vh;
+}
+
+.vert-title {
+  grid-area: 3/1/11/3;
+  background-color: #2998C1;
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+
+
+
+.about-content {
+  grid-area: 3/3/11/17;
+  background-color: #C7BA19;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-size: 10vh;
+}
+
+.picture-content {
+  grid-area: 1/1/10/10;
+  background-color: #C12963;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab2 {
+  grid-area: 1/10/3/13;
+  background-color: #2998C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-nav {
+  grid-area: 3/10/13/13;
+  background-color: #C7BA19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab3 {
+  grid-area: 1/1/3/17;
+  background-color: #2998C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-content {
+  grid-area: 3/1/11/17;
+  background-color: #C7BA19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}

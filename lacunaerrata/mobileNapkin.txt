@@ -1,0 +1,28 @@
+
+
+
+      .picture-grid{
+        grid-area: content;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: auto;
+      }
+
+
+
+
+
+.imgContainer{
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: auto;
+}
+
+.imgContainer img{
+  max-width: 24em;
+  max-height: 16em;
+}

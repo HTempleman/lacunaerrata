@@ -13,9 +13,9 @@ name = "pypi"
 
 django = "*"
 gunicorn = "*"
-"psycopg2-binary" = "*"
+"psycopg2" = "*"
 
 
 [requires]
 
-python_version = "3.5.0"
+python_version = "3.5"

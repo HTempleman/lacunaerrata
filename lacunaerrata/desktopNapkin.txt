@@ -1,0 +1,69 @@
+Scratch sheet:
+
+for centering image:
+
+  padding-left: 15vw;
+
+
+yellow color: #C7BA19;
+
+maroon color: #C12963;
+
+teal color: #2998C1;
+
+millennial pink: #d680a1;
+
+
+background-color: #C7BA19;
+
+
+
+
+
+
+
+
+
+
+      .laacuna-style {
+        display: flex;
+        transition: all 1s ease;
+        font-size: 7vw;
+        writing-mode: sideways-lr;
+        position: absolute;
+        top: 0.5em;
+        left: -0.75em;
+        align-items: center;
+      }
+
+      .laacuna-style:hover{
+        padding-top: 0.25em;
+        color: #756192;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #d680a1;
