@@ -117,16 +117,34 @@
     display: flex;
     transition: all 1s ease;
     font-size: 7vw;
-    writing-mode: vertical-lr;
     transform: rotate(180deg);
+    writing-mode: vertical-lr;
     position: absolute;
     top: 0.5em;
     left: -0.75em;
+    color: black;
+    align-items: center;
+  }
+
+  .lacuna-safari-style {
+    display: flex;
+    transition: all 1s ease;
+    font-size: 7vw;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 0.5em;
+    left: -0.75em;
+    color: black;
     align-items: center;
   }
 
   .lacuna-style:hover {
     top: 1em;
+    color: #756192;
+  }
+
+  .lacuna-safari-style:hover {
     color: #756192;
   }
 
