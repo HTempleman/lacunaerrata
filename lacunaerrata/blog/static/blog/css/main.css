@@ -596,6 +596,7 @@
     flex-flow: row;
     justify-content: center;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .imgContainer img {
