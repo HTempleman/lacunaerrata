@@ -588,6 +588,7 @@
     background: #d680a1;
     align-items: center;
     border: 2px solid;
+    -webkit-overflow-scrolling: touch;
   }
 
   .imgContainer {
