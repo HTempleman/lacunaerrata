@@ -595,8 +595,7 @@
     min-width: 100vw;
     flex-flow: row;
     justify-content: center;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: inherit;
   }
 
   .imgContainer img {
@@ -606,6 +605,7 @@
     margin: 5px;
     box-shadow: inset 0 0 70px 100px #ffe180;
     box-shadow: 0 0 37px 10px red;
+    overflow-x: inherit;
   }
 
   .pic-fadein {
