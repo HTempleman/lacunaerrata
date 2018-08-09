@@ -163,3 +163,12 @@ $('a[href*="#"]')
           }
       });
     }
+
+
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+if(isSafari = true){
+  var lacunaSwitch = document.getElementsByClassName("lacuna-style")[0];
+  lacunaSwitch.classList.remove("lacuna-style");
+  lacunaSwitch.classList.add("lacuna-safari-style");
+}

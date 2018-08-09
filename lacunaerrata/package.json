@@ -1,6 +1,8 @@
 {
 	"name": "lacunaErrata",
 	"version": "0.1.0",
-	"devDependencies": {
+	"devDependencies": {},
+	"dependencies": {
+		"intersection-observer": "^0.5.0"
 	}
 }
