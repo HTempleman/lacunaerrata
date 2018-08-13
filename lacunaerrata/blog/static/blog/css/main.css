@@ -772,10 +772,11 @@
     grid-area: title;
     background-color: #2998c1;
     display: flex;
-    font-size: 2vh;
+    font-size: 1em;
     justify-content: center;
     align-items: center;
     border: 2px solid;
+    padding-top: -10px;
   }
 
   .blog-content {
