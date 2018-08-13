@@ -207,11 +207,33 @@
     grid-area: 3/3/11/17;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     background-color: #c7ba19;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
     padding: 20px;
-    font-size: 10vh;
+  }
+
+  .about-text {
+    font-size: 5vh;
+    font-family: 'Cormorant Garamond', serif;
+    border-right: 2px solid;
+    padding-right: 10px;
+  }
+
+  .about-text2 {
+    font-size: 5vh;
+    font-family: 'Cormorant Garamond', serif;
+    transform: translateX(25vw);
+    border-bottom: 2px solid;
+    padding-right: 10px;
+  }
+
+  h1::first-letter {
+    font-size: 8vh;
+    border: 2px solid;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .picture-grid {
@@ -330,8 +352,29 @@
     grid-area: 3/1/11/11;
     background-color: #c7ba19;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 5px;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .blog-content h1::first-letter {
+    font-size: 2em;
+    border: 0;
+    vertical-align: bottom;
+    line-height: 0.9em;
+  }
+
+  .blog-content h1 {
+    border: 2px solid;
+    padding: 10px;
+  }
+
+  .blog-content h2 {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
   }
 
   .blog-sidebar-fluff {
@@ -565,10 +608,36 @@
     grid-area: content;
     background: #c7ba19;
     display: flex;
+    flex-direction: column;
     font-size: 3vh;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: flex-start;
     border: 2px solid;
+  }
+
+  .about-text {
+    font-size: 1.25em;
+    font-family: 'Cormorant Garamond', serif;
+    transform: translateX(0.5em);
+    border: 2px #2998c1 dotted;
+    width: 75vw;
+    padding: 5px;
+  }
+
+  .about-text2 {
+    font-size: 1.25em;
+    font-family: 'Cormorant Garamond', serif;
+    transform: translateX(2em);
+    border: 2px #2998c1 dotted;
+    width: 75vw;
+    padding: 5px;
+  }
+
+  h1::first-letter {
+    font-size: 1em;
+    border: 2px solid;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .m-about-page-switch {
@@ -713,12 +782,34 @@
     grid-area: content;
     background-color: #c7ba19;
     display: flex;
-    font-size: 4vh;
+    flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
     justify-content: center;
     align-items: center;
     border: 2px solid;
     border-top: 0;
     border-bottom: 0;
+    padding-left: 10px;
+  }
+
+  .blog-content h1::first-letter {
+    font-size: 2em;
+    border: 0;
+    vertical-align: bottom;
+    line-height: 0.9em;
+  }
+
+  .blog-content h1 {
+    border: 2px solid;
+    font-size: 1.23em;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+  }
+
+  .blog-content h2 {
+    margin-top: -0.5px;
+    font-size: 2em;
   }
 
   .blog-page-switch {
