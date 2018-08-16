@@ -485,8 +485,6 @@
     font-size: 3vh;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
-    border-right: 0;
   }
 
   .logo .logopic {
@@ -498,8 +496,6 @@
     grid-area: webName;
     background: #c12963;
     display: flex;
-    border: 2px solid;
-    border-right: 0;
   }
 
   .webNameLac {
@@ -509,9 +505,6 @@
     font-size: 4vh;
     align-items: center;
     justify-content: flex-end;
-    border: 2px solid;
-    border-left: 0;
-    border-right: 0;
   }
 
   .webNameErr {
@@ -521,8 +514,6 @@
     font-size: 4vh;
     align-items: center;
     justify-content: flex-start;
-    border: 2px solid;
-    border-left: 0;
   }
 
   .webNameErr p {
@@ -542,8 +533,6 @@
     font-size: 3vh;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
-    border-top: 0;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -554,8 +543,6 @@
     font-size: 3vh;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
-    border-top: 0;
     font-family: 'Raleway', sans-serif;
     color: black;
     text-decoration: none;
@@ -568,9 +555,6 @@
     font-size: 3vh;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
-    border-left: 0;
-    border-top: 0;
     color: black;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -579,19 +563,16 @@
   .navBlog a {
     border: 2px solid;
     padding: 15%;
-    box-shadow: 0 0 100px 25px #cf9d5d;
   }
 
   .navPics a {
     border: 2px solid;
     padding: 15%;
-    box-shadow: 0 0 100px 25px #78a96d;
   }
 
   .navAbout a {
     border: 2px solid;
     padding: 15%;
-    box-shadow: 0 0 100px 25px #808cb1;
   }
 
   .m-about-title {
@@ -601,41 +582,35 @@
     font-size: 3vh;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
   }
 
   .m-about-content {
     grid-area: content;
     background: #c7ba19;
+    font-family: 'Slabo 27px', serif;
     display: flex;
     flex-direction: column;
     font-size: 3vh;
     align-items: baseline;
-    justify-content: flex-start;
-    border: 2px solid;
+    justify-content: space-around;
   }
 
   .about-text {
     font-size: 1.25em;
-    font-family: 'Cormorant Garamond', serif;
     transform: translateX(0.5em);
-    border: 2px #2998c1 dotted;
+    background-color: rgba(41, 152, 193, 0.75);
     width: 75vw;
-    padding: 5px;
   }
 
   .about-text2 {
     font-size: 1.25em;
-    font-family: 'Cormorant Garamond', serif;
     transform: translateX(2em);
-    border: 2px #2998c1 dotted;
+    background-color: rgba(41, 152, 193, 0.75);
     width: 75vw;
-    padding: 5px;
   }
 
   h1::first-letter {
     font-size: 1em;
-    border: 2px solid;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -656,7 +631,6 @@
     min-height: auto;
     background: #d680a1;
     align-items: center;
-    border: 2px solid;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -674,8 +648,6 @@
     width: 15em;
     height: 10em;
     margin: 5px;
-    box-shadow: inset 0 0 70px 100px #ffe180;
-    box-shadow: 0 0 37px 10px red;
   }
 
   .pic-fadein {
@@ -699,7 +671,6 @@
     justify-content: center;
     font-size: 4vh;
     align-items: center;
-    border: 2px solid;
   }
 
   .pic-nav {
@@ -710,8 +681,6 @@
     font-size: 4vh;
     flex-flow: row;
     align-items: center;
-    border: 2px solid;
-    border-right: 0;
   }
 
   button {
@@ -752,7 +721,6 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    border: 2px solid;
   }
 
   .mobile-page-toggle2 {
@@ -765,17 +733,15 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    border: 2px solid;
   }
 
   .blog-title {
     grid-area: title;
     background-color: #2998c1;
     display: flex;
-    font-size: 1em;
+    font-size: 1.1em;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
     padding-top: -10px;
   }
 
@@ -784,12 +750,9 @@
     background-color: #c7ba19;
     display: flex;
     flex-direction: column;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Slabo 27px', serif;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
-    border-top: 0;
-    border-bottom: 0;
     padding-left: 10px;
   }
 
@@ -798,6 +761,8 @@
     border: 0;
     vertical-align: bottom;
     line-height: 0.9em;
+    margin-right: -9px;
+    background-color: inherit;
   }
 
   .blog-content h1 {

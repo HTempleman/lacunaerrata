@@ -1,36 +1,39 @@
 /** Welcome to the LacunaErrata javascript main file*/
-
-// Select all links with hashes
+/** Smooth scrolling implementation courtesy of Chris Coyier */
+/** Select all links with hashes */
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
+  /** Remove links that don't actually link to anything */
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
+    /** On-page links */
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       &&
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
+      /** Figure out element to scroll to */
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
+      /** Does a scroll target exist? */
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
+        /** Only prevent default if animation is actually gonna happen */
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
+          /** Callback after animation */
+          /** Must change focus! */
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) {
+            /** Checking if the target was focused */
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            /** Adding tabindex for elements not focusable */
+            $target.focus();
+            /** Set focus again */
           };
         });
       }
@@ -38,7 +41,7 @@ $('a[href*="#"]')
   });
 
 
-    /** The code below governs the population and transitions of picture divs */
+    /** The code below governs the population and transitions of picture divs. It was conceived and impliemented entirely by yours truly, for what that's worth...*/
 
     var btns = document.querySelectorAll('button');
 
@@ -129,16 +132,16 @@ $('a[href*="#"]')
 
     /** Intersection Observer API implementation */
 
-    // Get all of the images that are marked up to lazy load
+    /** Get all of the images that are marked up to lazy load */
     const images = document.querySelectorAll('.js-lazy-image');
 
     const config = {
-      // If the image gets within 50px in the Y axis, start the download.
+      /** If the image gets within 50px in the Y axis, start the download. */
       rootMargin: '50px 0px',
       threshold: 0.01
     };
 
-    // The observer for the images on the page
+    /** The observer for the images on the page */
     let observer = new IntersectionObserver(onIntersection, config);
       images.forEach(image => {
         observer.observe(image);
@@ -151,11 +154,11 @@ $('a[href*="#"]')
     }
 
     function onIntersection(entries) {
-      // Loop through the entries
+      /** Loop through the entries */
       entries.forEach(entry => {
-        // Are we in viewport?
+        /** Are we in viewport? */
         if (entry.intersectionRatio > 0) {
-          // Stop watching and load the image
+          /** Stop watching and load the image */
           observer.unobserve(entry.target);
             lazyLoadImage(entry.target);
             entry.target.parentElement.classList.remove("pic-fadeout");
@@ -164,7 +167,7 @@ $('a[href*="#"]')
       });
     }
 
-
+/** Lazy safari observer picked up off stack overflow */
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
 if(isSafari === true){
