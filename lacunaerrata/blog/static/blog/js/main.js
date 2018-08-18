@@ -41,7 +41,7 @@ $('a[href*="#"]')
   });
 
 
-    /** The code below governs the population and transitions of picture divs. It was conceived and impliemented entirely by yours truly, for what that's worth...*/
+    /** The code below governs the population and transitions of picture divs. It was conceived and implemented entirely by yours truly, for what that's worth...*/
 
     var btns = document.querySelectorAll('button');
 
