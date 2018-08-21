@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CELERY_BROKER_URL = 'amqp://localhost'
+
 ROOT_URLCONF = 'lacunaerrata.urls'
 
 TEMPLATES = [
@@ -118,6 +120,20 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+#Celery middleware and Google Analytics integration
+# https://github.com/praekelt/django-google-analytics
+# http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html
+
+
+GOOGLE_ANALYTICS = {
+        'google_analytics_id': 'UA-124226592-1',
+}
+
+MIDDLEWARE_CLASSES = {
+        'google_analytics.middleware.GoogleAnalyticsMiddleware',
+}
 
 
 # Static files (CSS, JavaScript, Images)
